@@ -4,7 +4,7 @@ services:
     image: eqlabs/pathfinder:latest
     restart: unless-stopped
     environment:
-      - RUST_LOG=info
+      - RUST_LOG=info #environment definition
     env_file: # environment file
       - pathfinder-var.env
     volumes:
